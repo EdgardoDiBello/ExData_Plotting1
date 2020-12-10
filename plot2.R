@@ -13,5 +13,5 @@ subpoder[1441:2880,"Time"] <- format(subpoder[1441:2880,"Time"],"2007-02-02 %H:%
 plot(subpoder$Time, as.numeric(subpoder$Global_active_power),type="l",xlab="",ylab="Global Active Power (kilowatts)", main="Global Active Power vs Time")
 
 #creation of the .png image of the plot.
-dev.copy(png,file="plot2.png")
+dev.copy(png,file="plot2.png",width=480,height=480)
 dev.off()

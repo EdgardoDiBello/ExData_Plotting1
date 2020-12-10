@@ -8,7 +8,7 @@ subpoder <- subset(poder,poder$Date=="1/2/2007"|poder$Date=="2/2/2007")
 hist(as.numeric(subpoder$Global_active_power),col="red",main="Global Active Power",xlab = "Global Active Power(kilowatts)")
 
 #creation of the .png image of the plot.
-dev.copy(png,file="plot1.png")
+dev.copy(png,file="plot1.png",width=480,height=480)
 dev.off()
 
 
